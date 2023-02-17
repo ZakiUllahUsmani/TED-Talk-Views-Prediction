@@ -16,22 +16,65 @@ In order to get the best-fit line (best predictions) I'll remove the outliers af
 
 For model evaluation, we have multiple evaluation metrics. Like mean squared error (MSE), root mean squared error (RMSE), mean absolute error (MAE), mean absolute percentage error (MAPE) r2 score, and adjusted r2.
 
+# Variables Description
+
+**talk_id** :- Unique identification of talk provided by TED.
+
+**title** :- Title of the topic discussed.
+
+**speaker_1** : First speaker.
+
+**all_speakers** :- Name of all the speakers.
+
+**occupations** :- Occupation of the speakers.
+
+**about_speakers** :- About the speakers.
+
+**views** :- Total number of views.
+
+**recorded_date** :- Date of recording the videos.
+
+**published_date** :- Published date of recorded videos.
+
+**event** :- Event or medium in which the talk was given.
+
+**native_lang** :- Original language in which the talk was given.
+
+**available_lang** :- All available languages (lang_code) for a talk.
+
+**comments** :- Total counts of comments on a talk.
+
+**duration** :- Duration of talk in seconds.
+
+**topics** :- Related tags or topics for the talk
+
+**related_talks** :- Related talks present.
+
+**url** :- Url of the talk.
+
+**description** :- Descreiption of the talk.
+
+**transcript** :- Full transcript of the talk.
+
+# **Target Variable** :- Views
+
 # Used Libraries:-
-Numpy :- NumPy is a Python library used for working with arrays. It also has functions for working in the domain of linear algebra, Fourier transform, and matrices.
 
-Pandas :- Pandas is an open-source Python package that is most widely used for data science/data analysis and machine learning tasks. It is built on top of Numpy, which provides support for multi-dimensional arrays.
+**Numpy** :- NumPy is a Python library used for working with arrays. It also has functions for working in the domain of linear algebra, Fourier transform, and matrices.
 
-Matplotlib :- Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.
+**Pandas** :- Pandas is an open-source Python package that is most widely used for data science/data analysis and machine learning tasks. It is built on top of Numpy, which provides support for multi-dimensional arrays.
 
-Seaborn :- Seaborn is a library that uses Matplotlib underneath to plot graphs. It will be used to visualize random distributions.
+**Matplotlib** :- Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.
 
-Plotly :- The plotly Python library is an interactive, open-source plotting library that supports over 40 unique chart types covering a wide range of statistical, financial, geographic, scientific, and 3-dimensional use cases.
+**Seaborn** :- Seaborn is a library that uses Matplotlib underneath to plot graphs. It will be used to visualize random distributions.
 
-Math :- Math is a built-in module in the Python standard library that provides standard mathematical constants and functions. We can use the math module to perform various mathematical calculations, such as numeric, trigonometric, logarithmic, and exponential calculations.
+**Math** :- Math is a built-in module in the Python standard library that provides standard mathematical constants and functions. We can use the math module to perform various mathematical calculations, such as numeric, trigonometric, logarithmic, and exponential calculations.
 
-DateTime :- datetime in Python is the combination between dates and times. The attributes of this class are similar to both date and separate classes. These attributes include day, month, year, minute, second, microsecond, hour, and time zone information.
+**DateTime** :- datetime in Python is the combination between dates and times. The attributes of this class are similar to both date and separate classes. These attributes include day, month, year, minute, second, microsecond, hour, and time zone information.
 
-Scikit-Learn :- Scikit-learn is an open-source data analysis library and the gold standard for Machine Learning (ML) in the Python ecosystem. Key concepts and features include Algorithmic decision-making methods, including Classification: identifying and categorizing data based on patterns.
+**Scikit-Learn** :- Scikit-learn is an open-source data analysis library and the gold standard for Machine Learning (ML) in the Python ecosystem. Key concepts and features include Algorithmic decision-making methods, including Classification: identifying and categorizing data based on patterns.
+
+# Selected evaluation metrics and model.
 
 I will consider mean squared error, r2 and adjusted r2 as my evaluation metrics, beacause sum of squared errors gives the distence from the actual data point to the predicted data point. If we can get the mean of that sum of squared error we'll get the best fit line or better predictions. Sometimes R squared doesn't give a satisfactory score that is why i also considerd adjust R squared as my evaluation metrics.
 
